@@ -32,8 +32,8 @@ dependencies {
     implementation 'androidx.navigation:navigation-ui:2.1.0'
     implementation 'androidx.lifecycle:lifecycle-extensions:2.1.0'
     testImplementation 'junit:junit:4.12'
-    androidTestImplementation 'androidx.test:runner:1.2.0'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+   // androidTestImplementation 'androidx.test:runner:1.2.0'
+   // androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
     implementation 'androidx.cardview:cardview:1.0.0'
     implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.0.0'
     implementation group: 'commons-codec', name: 'commons-codec', version: '1.9'
@@ -42,12 +42,12 @@ dependencies {
     annotationProcessor 'com.github.bumptech.glide:compiler:4.10.0'
 
     implementation 'com.android.support:multidex:1.0.3'
-    implementation "androidx.lifecycle:lifecycle-process:2.4.0"
-    implementation 'in.balakrishnan.easycam:easycam:0.0.3-rc5'
-
     implementation 'id.zelory:compressor:1.0.4'
     implementation 'io.reactivex:rxandroid:1.2.1'
 
+    implementation 'in.balakrishnan.easycam:easycam:0.0.3-rc5'
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0-rc03'
 
     implementation project(path: ':spinnersearchable')
     implementation project(path: ':prdownloader')

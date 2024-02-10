@@ -68,7 +68,14 @@
             android:layout_weight="1.5"
             android:orientation="vertical">
 
-            <!-- no of columns 3 auto_fit -->
+            <ImageView
+
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:visibility="gone"
+                android:id="@+id/image_clicked"/>
+
+
             <GridView
                 android:id="@+id/gv"
                 android:layout_width="fill_parent"
@@ -77,7 +84,7 @@
                 android:columnWidth="90dp"
                 android:gravity="center"
                 android:horizontalSpacing="5dp"
-                android:numColumns="1"
+                android:numColumns="2"
                 android:padding="5dp"
                 android:stretchMode="columnWidth"
                 android:verticalSpacing="5dp" />

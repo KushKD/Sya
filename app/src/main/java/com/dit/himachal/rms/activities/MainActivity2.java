@@ -3,6 +3,8 @@ package com.dit.himachal.rms.activities;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
@@ -13,6 +15,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.GridView;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -66,6 +69,8 @@ public class MainActivity2 extends AppCompatActivity implements AsyncTaskListene
 
     private File actualImage;
     private File compressedImage;
+
+    ImageView image_clicked;
 
     private String[] list;
 
@@ -141,6 +146,8 @@ public class MainActivity2 extends AppCompatActivity implements AsyncTaskListene
         // pullToRefresh = findViewById(R.id.pullToRefresh);
         sliderView = findViewById(R.id.imageSlider);
         home_gv = findViewById(R.id.gv);
+        image_clicked = findViewById(R.id.image_clicked);
+
 
 
 
@@ -173,8 +180,14 @@ public class MainActivity2 extends AppCompatActivity implements AsyncTaskListene
         modulesPojo.setLogo("cameracrop");
         modulesPojo.setName("Click Crop Image");
 
+        ModulesPojo modulesPojo2 = new ModulesPojo();
+        modulesPojo2.setId("2");
+        modulesPojo2.setLogo("innovation");
+        modulesPojo2.setName("Detect Disease");
+
 
         modules.add(modulesPojo);
+        modules.add(modulesPojo2);
 
 
         adapter_modules = new HomeGridViewAdapter(this, (ArrayList<ModulesPojo>) modules);
@@ -299,12 +312,10 @@ public class MainActivity2 extends AppCompatActivity implements AsyncTaskListene
                             if (compressedImage != null) {
                                 System.out.println(compressedImage.getPath());
                                 Log.d("Compressed Image", compressedImage.getPath());
-                               // surveyObject.setConsentImagePath(compressedImage.getPath());
-                                //ModulesPojo moduleToUpdate = modules.get(12 - 1);
-                                //moduleToUpdate.setClicked(true);
-                                //moduleToUpdate.setLogo("click");
-                                //adapter_modules.notifyDataSetChanged();
-                            //    System.out.println(surveyObject.toString());
+                                // Set the compressed bitmap to the ImageView
+                                Bitmap bitmap = BitmapFactory.decodeFile(compressedImage.getAbsolutePath());
+                                image_clicked.setVisibility(View.VISIBLE);
+                                image_clicked.setImageBitmap(bitmap);
                             }
 
 
