@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical|center|center_horizontal"
+    android:layout_margin="10dp"
+    android:background="@drawable/pink_bordor"
+    android:gravity="center_horizontal|center|center_vertical"
+    android:padding="5dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal|center_vertical|center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/poppins_semibold"
+                android:gravity="center|center_horizontal|center_vertical"
+                android:padding="5dp"
+                android:text="User Login"
+                android:textColor="#494949"
+                android:textSize="20sp" />
+
+
+
+
+
+            <!-- User Name -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="2dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:gravity="left|center_horizontal|center_vertical"
+
+                    android:text="Enter Username *"
+                    android:textColor="@color/colcr_blue"
+                    android:textSize="15sp" />
+
+                <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|center_vertical|center_horizontal"
+                    android:orientation="horizontal"
+                    android:padding="1dip">
+
+                    <!-- ListRow Left sied Thumbnail image -->
+
+                    <EditText
+
+                        android:id="@+id/mobile"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="53dip"
+                        android:layout_marginRight="5dip"
+                        android:background="@drawable/bordor_rect"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:gravity="left|center_horizontal|center_vertical"
+                        android:maxLength="32"
+                        android:textColor="@color/colcr_blue"
+                        android:textColorHint="@color/colcr_blue"
+                        android:textSize="18dip" />
+
+                    <!-- Rightend Arrow -->
+                    <ImageButton
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="@string/app_name"
+
+                        android:visibility="gone" />
+
+
+
+                    <LinearLayout
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginRight="3dip"
+                        android:padding="3dip">
+
+
+                        <ImageView
+
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="top"
+                            android:padding="10dp"
+                            android:background="#339933"
+                            android:contentDescription="@string/app_name"
+                            android:src="@drawable/mobile" />
+
+                        <!--  android:src="@drawable/mobilenumber"-->
+
+                    </LinearLayout>
+
+                    <!--android:inputType="textCapCharacters-->"
+
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <!-- Get OTP Button -->
+
+
+            <!-- OTP -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:padding="2dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:gravity="left|center_horizontal|center_vertical"
+
+                    android:text="Enter Password"
+                    android:textColor="@color/colcr_blue"
+                    android:textSize="15sp" />
+
+                <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|center_vertical|center_horizontal"
+                    android:orientation="horizontal"
+                    android:padding="1dip">
+
+                    <!-- ListRow Left sied Thumbnail image -->
+
+                    <EditText
+
+                        android:id="@+id/otp"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="53dip"
+                        android:layout_marginRight="5dip"
+                        android:background="@drawable/bordor_rect"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:inputType="textCapWords"
+                        android:textColor="@color/colcr_blue"
+                        android:textColorHint="@color/colcr_blue"
+                        android:textSize="18dip" />
+
+                    <!-- Rightend Arrow -->
+                    <ImageButton
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="@string/app_name"
+
+                        android:visibility="gone" />
+
+                    <!--   android:src="@drawable/speaker"
+                       android:background="@drawable/circularbutton"-->
+
+
+                    <LinearLayout
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginRight="3dip"
+                        android:padding="3dip">
+
+
+                        <ImageView
+
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="top"
+                            android:padding="10dp"
+                            android:background="#339933"
+                            android:contentDescription="@string/app_name"
+                            android:src="@drawable/sms" />
+
+                        <!--  android:src="@drawable/mobilenumber"-->
+
+                    </LinearLayout>
+
+                    <!--android:inputType="textCapCharacters-->"
+
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="#4D4DFF"
+                android:fontFamily="@font/poppins_semibold"
+                android:gravity="center|center_vertical|center_horizontal"
+                android:text="Login"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

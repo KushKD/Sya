@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <!--<item-->
+        <!--android:id="@+id/nav_home"-->
+        <!--android:icon="@drawable/user"-->
+        <!--android:title="@string/menu_profile" />-->
+        <item
+            android:id="@+id/contact"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Contact Us"
+            android:visible="true" />
+
+        <item
+            android:id="@+id/disclaimer"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Disclaimer"
+            android:visible="true" />
+
+
+        <item
+            android:id="@+id/privacy"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Privacy Policy"
+            android:visible="true" />
+
+        <item
+            android:id="@+id/refund"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Refund Policy"
+            android:visible="true" />
+
+        <item
+            android:id="@+id/shipping"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Shipping Policy"
+            android:visible="true" />
+
+        <item
+            android:id="@+id/faq"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="FAQ"
+            android:visible="true" />
+
+        <item
+            android:id="@+id/support"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Health n Support"
+            android:visible="true" />
+
+        <item
+            android:id="@+id/log_in"
+            android:icon="@drawable/login_user"
+            android:title="Login" />
+        <!--<item-->
+        <!--android:id="@+id/nav_slideshow"-->
+        <!--android:icon="@drawable/ic_menu_slideshow"-->
+        <!--android:title="@string/menu_slideshow" />-->
+        <!--<item-->
+        <!--android:id="@+id/nav_tools"-->
+        <!--android:icon="@drawable/ic_menu_manage"-->
+        <!--android:title="@string/menu_tools" />-->
+    </group>
+
+    <!--<item android:title="Communicate">-->
+    <!--<menu>-->
+    <!--<item-->
+    <!--android:id="@+id/nav_share"-->
+    <!--android:icon="@drawable/ic_menu_share"-->
+    <!--android:title="@string/menu_share" />-->
+    <!--<item-->
+    <!--android:id="@+id/nav_send"-->
+    <!--android:icon="@drawable/ic_menu_send"-->
+    <!--android:title="@string/menu_send" />-->
+    <!--</menu>-->
+    <!--</item>-->
+
+</menu>
